@@ -7,25 +7,51 @@
     <title>Contato</title>
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
-            <a href="index.html"></a> Home</li>
-        <li><a href="contato.html"></a> Contato</li></li>
+            <a href="index.html"> Home</a></li>
+        <li><a href="contato.html"> Contato</a></li>
     </ul>
-    <h1>Entre em contato com a Tutora do Alfredo</h1>
+    <h1 class="center">Entre em contato com a Tutora do Alfredo</h1>
+    <div class="container">
+<div>
     <form>
 
-        <label for="nome">Nome:</label>
-        <input type="text" id='nome'>
-        <label for="email">Email:</label>
-        <input type="text" id ='email'>
-        <label for="assunto">Assunto:</label>
-        <input type="text" id= 'assunto'>
-        <textarea name="" id="" cols="60" rows="10"></textarea>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id="txtNome"></div><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id ="email" onkeyup="validaEmail()">
+        <div id="txtEmail"></div><br>
+        <label for="assunto">Assunto:</label><br>
+        <textarea name="" id="" cols="60" rows="5"onkeyup="validaAssunto"></textarea>
         <br>
-        <button>Enviar</button>
-    </form>
-    <h2>Endereço :  </h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.4364241114095!2d-73.96780638522493!3d40.77441864173263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a29d3847f5%3A0x564dfbba0141774a!2s5th%20Ave%2C%20New%20York%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1618607355294!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" frameborder="0"></iframe>
+        <div id="txtAssunto"></div><br>
+        <br>
+        <button onclick="enviar()">Enviar</button>
+</form>
+</div>
+
+<div class="ml-50">
+    <p> 5ª Avenida , 58</p>
+    <p>Manhattan- NY</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.4364241114095!2d-73.96780638522493!3d40.77441864173263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a29d3847f5%3A0x564dfbba0141774a!2s5th%20Ave%2C%20New%20York%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1618607355294!5m2!1spt-BR!2sbr" 
+    width="400" height="250" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
+</div>
+
+<hr>
+<div class="container">
+    <a href="http:www.instagram.com/">
+        <img class="tm-social p-50" src="assets/img/instagram.png" alt="Logo do Instagram"></a>
+    
+<a href="http:www.linkedin.com/in/giulliana-munhoz/">
+<img class="tm-social p-50" src="assets/img/linkedin.png" alt="Logo do LinkedIn "></a>
+
+</div>
+  
+ <footer><p class="center">Todos os direitos reservados :Giulliana Munhoz &copy;</p></footer>
+ 
+   </body>
+</html>
 </body>
 </html>
